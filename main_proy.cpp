@@ -298,7 +298,7 @@ int main()
 
 		model = glm::mat4(1.0f);
 		model = glm::translate(model, glm::vec3(-1.51f, 2.19f, 1.38f));
-		model = glm::rotate(glm::mat4(1.0f), glm::radians(movpuertar2), glm::vec3(0.0f, 1.0f, 0.0f));
+		model = glm::rotate(glm::mat4(1.0f), glm::radians(movpuerta2), glm::vec3(0.0f, 1.0f, 0.0f));
 		staticShader.setMat4("model", model);
 		puerta_recamara.Draw(staticShader);
 
@@ -408,7 +408,7 @@ void my_input(GLFWwindow* window)
 		movpuerta2 += 5.0f;
 	if (glfwGetKey(window, GLFW_KEY_U) == GLFW_PRESS && -70 < movpuertar)
 		movpuerta2 -= 5.0f;
-	// Room Door 2
+	// Bath Door
 	if (glfwGetKey(window, GLFW_KEY_G) == GLFW_PRESS && 0 > movpuertar)
 		movpuertab += 5.0f;
 	if (glfwGetKey(window, GLFW_KEY_Y) == GLFW_PRESS && -70 < movpuertar)
