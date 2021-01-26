@@ -1,7 +1,7 @@
 /* -------------------------------------------------------- */
 /* ----------------   PROYECTO FINAL ---------------------- */
 /* ---------------- COMPUTACION GRAFICA  ------------------ */
-/* ---- PROFESOR. ING. CARLOS ALDAIR ROM¡N BALBUENA ------- */
+/* ---- PROFESOR. ING. CARLOS ALDAIR ROM√ÅN BALBUENA ------- */
 /* ---------------- SEMESTRE 2021-1 ----------------------- */
 /* ---------- ALUMNO: AMALFI FIGUEROA ISAAC --------------- */
 /* -------------------------------------------------------- */
@@ -279,32 +279,32 @@ int main()
 		/* -------------------------------------------------- */
 		model = glm::mat4(1.0f);
 		model = glm::translate(model, glm::vec3(-7.9f, 2.1f, 7.11f));
-		model = glm::rotate(glm::mat4(1.0f), glm::radians(movpuertap), glm::vec3(0.0f, 1.0f, 0.0f));
+		model = glm::rotate(model, glm::radians(movpuertap), glm::vec3(0.0f, 1.0f, 0.0f));
 		staticShader.setMat4("model", model);
 		puerta_principal.Draw(staticShader);
 
 		model = glm::mat4(1.0f);
 		model = glm::translate(model, glm::vec3(-0.1f, 3.36f, 7.06f));
-		model = glm::rotate(glm::mat4(1.0f), glm::radians(movpuertag), glm::vec3(1.0f, 0.0f, 0.0f));
+		model = glm::rotate(model, glm::radians(movpuertag), glm::vec3(1.0f, 0.0f, 0.0f));
 		model = glm::translate(model, glm::vec3(0.0f, -movpuertag / 100, 0.0f));
 		staticShader.setMat4("model", model);
 		puerta_garage.Draw(staticShader);
 
 		model = glm::mat4(1.0f); 
 		model = glm::translate(model, glm::vec3(-2.39f, 2.1f, -0.6f));
-		model = glm::rotate(glm::mat4(1.0f), glm::radians(movpuertar), glm::vec3(0.0f, 1.0f, 0.0f));
+		model = glm::rotate(model, glm::radians(movpuertar), glm::vec3(0.0f, 1.0f, 0.0f));
 		staticShader.setMat4("model", model);
 		puerta_rec.Draw(staticShader);
 
 		model = glm::mat4(1.0f);
 		model = glm::translate(model, glm::vec3(-1.51f, 2.19f, 1.38f));
-		model = glm::rotate(glm::mat4(1.0f), glm::radians(movpuerta2), glm::vec3(0.0f, 1.0f, 0.0f));
+		model = glm::rotate(model, glm::radians(movpuerta2), glm::vec3(0.0f, 1.0f, 0.0f));
 		staticShader.setMat4("model", model);
 		puerta_recamara.Draw(staticShader);
 
 		model = glm::mat4(1.0f);
 		model = glm::translate(model, glm::vec3(-0.38f, 2.18f, 0.02f));
-		model = glm::rotate(glm::mat4(1.0f), glm::radians(movpuertab), glm::vec3(0.0f, 1.0f, 0.0f));
+		model = glm::rotate(model, glm::radians(movpuertab), glm::vec3(0.0f, 1.0f, 0.0f));
 		staticShader.setMat4("model", model);
 		puerta_bath.Draw(staticShader);
 
